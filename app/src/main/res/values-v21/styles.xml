@@ -1,0 +1,8 @@
+
+<resources>
+
+    <style name="Theme.Imgur." parent="Base.Theme.Imgur">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

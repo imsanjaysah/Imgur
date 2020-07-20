@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Imgur" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/imgur_green_900</item>
+        <item name="colorOnPrimary">@color/imgur_yellow_300</item>
+        <item name="colorPrimaryDark">@color/imgur_black</item>
+        <item name="colorOnSurface">@color/imgur_white</item>
+        <item name="colorAccent">@color/imgur_green_300</item>
+        <item name="colorSurface">@color/imgur_green_900</item>
+        <item name="colorSecondary">@color/imgur_yellow_300</item>
+        <item name="android:colorBackground">@color/imgur_green_900</item>
+    </style>
+
+    <style name="Theme.Imgur" parent="Base.Theme.Imgur"/>
+
+    <style name="Theme.Imgur.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Imgur.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
