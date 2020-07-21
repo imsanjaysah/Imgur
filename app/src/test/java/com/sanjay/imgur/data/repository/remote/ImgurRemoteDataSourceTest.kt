@@ -49,21 +49,22 @@ class ImgurRemoteDataSourceTest {
         val argumentCaptorInt = argumentCaptor<Int>()
         val argumentCaptorString = argumentCaptor<String>()
 
-        whenever(apiService.searchImages(apiKey, query, currentPage)).thenReturn(observable)
+        whenever(apiService.searchImages(currentPage, query, apiKey)).thenReturn(observable)
 
         remoteDataSource?.searchImages(apiKey, query, currentPage, limit)
 
         verify(apiService).searchImages(
+            argumentCaptorInt.capture(),
             argumentCaptorString.capture(),
-            argumentCaptorString.capture(),
-            argumentCaptorInt.capture()
+            argumentCaptorString.capture()
         )
 
         Assert.assertThat(
             apiService.searchImages(
-                argumentCaptorString.firstValue,
-                argumentCaptorString.secondValue,
                 argumentCaptorInt.firstValue
+                ,
+                argumentCaptorString.firstValue,
+                argumentCaptorString.secondValue
             ),
             CoreMatchers.instanceOf(Single::class.java)
         )
