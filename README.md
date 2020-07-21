@@ -1,5 +1,5 @@
 # Imgur
- <img src="screens/screen1.png" style="float: left; margin-left: 10px;" width="200"/> <img src="screens/screen2.png" style="float: left; margin-left: 10px;" width="200"/> <img src="screens/screen3.png" style="float: left; margin-left: 10px;" width="200"/></br>Imgur image search application.
+ <img src="screens/screen1.jpg" style="float: left; margin-left: 10px;" width="200"/> <img src="screens/screen2.jpg" style="float: left; margin-left: 10px;" width="200"/> <img src="screens/screen3.jpg" style="float: left; margin-left: 10px;" width="200"/></br>Imgur image search application.
 ## Features
   + Search Images
   + See image detail
